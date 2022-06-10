@@ -1,13 +1,13 @@
 #!/bin/sh
 
 numbers="1234567890"
-letters="ertuiopsdfghijklxcvbn"
+letters="ertuiopsdfghjklxcvbnERTUIOPSDFGHJKLXCVBN"
 symbols="#!"
 
 characters="$numbers$letters$symbols"
 
 passwd=""
-for i in {1..20};
+for i in {1..25};
 do
     char="${characters:$(( RANDOM % ${#characters} )):1}"
     passwd+=$char

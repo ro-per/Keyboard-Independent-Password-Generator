@@ -1,13 +1,13 @@
 import string, random
 
 numbers="1234567890"
-letters="ertuiopsdfghijklxcvbn"
+letters="ertuiopsdfghjklxcvbnERTUIOPSDFGHJKLXCVBN"
 symbols="#!"
 
 characters = list(numbers+letters+symbols)
 
 password = []
-for i in range(20): 
+for i in range(25): 
 
     char = random.choice(characters)
     password.append(char)
